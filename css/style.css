@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    --background-color: #F7F7F7;
+    --headers-color: #252B42;
+    --paragraph-color: #737373;
+    --names-color: #FF7B47;
+    --inner-input-text-color: #BDBDBD;
+    --button-background: #FF7B47;
+    --button-border-radius: 5px;
+    --footer-text-colot: #ffffff;
+    letter-spacing: 0.02rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 5.7rem;
+    color: var(--headers-color);
+    font-family: 'Montserrat', sans-serif;  /* почему не наследуюется шрифт? */
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--headers-color);
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+p {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--paragraph-color);
+    font-weight: 500;
+}
+
+blockquote {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: var(--paragraph-color);
+    text-align: left;
+}
+
+button {
+    background-color: var(--button-background);
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+input {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+footer {
+    background-color: var(--headers-color);
+}
+
+/* не уверен в реализации */
+/* .header-button {  
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+} */
+
+.header-brend-link {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--headers-color);
+    text-decoration: none;
+    letter-spacing: 0.01rem; /* как лучше делать? абсолютное значение или в ремах*/
+}
+
+.header-nav-ul {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header-nav-ul-text {
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+.main-brend-slogan {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--paragraph-color);
+    text-align: center;
+}
+
+.paragraph-default-text-centered {
+    text-align: center;   
+}
+
+.carts-ul {
+    list-style-type: none;
+}
+
+.blockquote-name-of-quoted {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--names-color);
+    font-weight: 600;
+}
+
+.blockquote-proffession-of-quoted {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--headers-color);
+    font-weight: 600;
+}
+
+.contacts-header {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--headers-color);
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-header { 
+    font-size: 4rem;
+    line-height: 5.7rem;
+    color: var(--headers-color);
+    font-weight: 700;
+}
+
+.footer-header {
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.footer-list-header {
+    color: #fff;
+}
+
+.footer-ul {
+    list-style-type: none;
+}
+
+.footer-ul-text { 
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0.02rem;
+}
+
+.footer-ul-text-a {
+    color: #fff; 
+}
+
+.footer-under-subscribe-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: #fff;
+}
