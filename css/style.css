@@ -12,13 +12,23 @@
     --button-border-radius: 5px;
     --footer-text-colot: #ffffff;
     letter-spacing: 0.02rem;
+    box-sizing: border-box;
 }
+
+/* *, ::after ::before {
+    box-sizing: inherit; используется для перерассчёта формы и размера элементов
+} */
+
+*{
+    box-sizing: inherit;
+}
+
 
 h2 {
     font-size: 4rem;
     line-height: 5.7rem;
     color: var(--headers-color);
-    font-family: 'Montserrat', sans-serif;  /* почему не наследуюется шрифт? */
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 700;
     text-align: center;
 }
@@ -65,28 +75,56 @@ input {
     font-weight: 600;
 }
 
-
 footer {
     background-color: var(--headers-color);
 }
 
+
+
+.wrapper { 
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+
+.header-nav{
+    display: flex;
+    gap: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+
+}
+
+.header{
+    padding-top: 36px;
+}
+
 /* не уверен в реализации */
-/* .header-button {  
+.header-button {  
     padding: 0;
     border: none;
-    font: inherit;
-    color: inherit;
     background-color: transparent;
-} */
+    max-height: 24px;
+}
+
+.section-default-bgrnd{
+    background-color: var(--background-color);
+}
 
 .header-brend-link {
     font-size: 2.4rem;
-    line-height: 3.2rem;
+    line-height: 3.2rem; /*указывать в % или коэфф. Рассчитывается как line-height/font-size*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--headers-color);
     text-decoration: none;
-    letter-spacing: 0.01rem; /* как лучше делать? абсолютное значение или в ремах*/
+    letter-spacing: 0.01rem; /*лучше проверить всё это */
+
+    margin-right: auto;
 }
 
 .header-nav-ul {
@@ -101,6 +139,7 @@ footer {
 .header-nav-ul-text {
     text-decoration: none;
     color: var(--paragraph-color);
+    margin-bottom: 30px;
 }
 
 .main-brend-slogan {
@@ -180,4 +219,47 @@ footer {
     font-weight: 400;
     line-height: 2.8rem;
     color: #fff;
+}
+
+
+#button-orange-get-now{
+    display: flex;
+    border: none;
+    border-radius: 37px;
+    height: 50px;
+    width: 190px;
+    
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 36px;
+}
+
+#link-learn-more{
+    display: flex;
+
+    width: 160px;
+    height: 50px;
+    border: 1px solid #0D5C63;
+    border-radius: 37px;
+    
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    margin: 25px auto 50px;
+    
+
 }
