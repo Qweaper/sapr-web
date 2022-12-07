@@ -15,14 +15,9 @@
     box-sizing: border-box;
 }
 
-/* *, ::after ::before {
-    box-sizing: inherit; используется для перерассчёта формы и размера элементов
-} */
-
-*{
+*, *:before, *:after {
     box-sizing: inherit;
 }
-
 
 h2 {
     font-size: 4rem;
@@ -35,6 +30,10 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+section{
+    padding: 36px 35px 0px;
 }
 
 h3 {
@@ -59,6 +58,7 @@ blockquote {
     font-weight: 600;
     color: var(--paragraph-color);
     text-align: left;
+    margin: 20px auto;
 }
 
 button {
@@ -77,6 +77,7 @@ input {
 
 footer {
     background-color: var(--headers-color);
+    padding: 36px 35px 0px;
 }
 
 
@@ -88,6 +89,19 @@ footer {
     padding-left: 16px;
     padding-right: 16px;
     
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .header-nav{
@@ -103,7 +117,7 @@ footer {
     padding-top: 36px;
 }
 
-/* не уверен в реализации */
+
 .header-button {  
     padding: 0;
     border: none;
@@ -128,18 +142,30 @@ footer {
 }
 
 .header-nav-ul {
+    
     font-size: 3rem;
     line-height: 4.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    
     list-style-type: none;
     text-align: center;
+    margin-top: 85px;
+    margin-bottom: 100px;
+    padding: 0px;
+    /* display: flex;
+    flex-wrap: wrap;
+    padding: 0px auto 0px auto; 
+    align-content: center; */
+}
+
+.header-nav-ul-li {
+    margin-bottom: 30px;
 }
 
 .header-nav-ul-text {
     text-decoration: none;
     color: var(--paragraph-color);
-    margin-bottom: 30px;
 }
 
 .main-brend-slogan {
@@ -156,6 +182,45 @@ footer {
 
 .carts-ul {
     list-style-type: none;
+    margin-top: 45px;
+    padding-left: 0px;
+}
+
+.carts-ul-li{
+    padding: 35px 40px;
+    border: 1px solid #E8E8E8;
+    margin-top: 30px;
+}
+
+.carts-ul-li-h-container{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.carts-ul-li-header{
+    display: inline;
+
+    margin-left: 15px;
+}
+
+.blockquote-ul{
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 60px;
+}
+
+.blockquote-ul-li {
+    padding: 30px 36px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.blockquote-photo {
+    float: left;
 }
 
 .blockquote-name-of-quoted {
@@ -163,6 +228,7 @@ footer {
     line-height: 2.4rem;
     color: var(--names-color);
     font-weight: 600;
+    margin: 0px 0px 0px 65px;
 }
 
 .blockquote-proffession-of-quoted {
@@ -170,6 +236,7 @@ footer {
     line-height: 2.4rem;
     color: var(--headers-color);
     font-weight: 600;
+    margin: 0px 0px 0px 65px;
 }
 
 .contacts-header {
@@ -178,6 +245,8 @@ footer {
     color: var(--headers-color);
     font-weight: 700;
     text-align: left;
+    margin: 0px;
+    margin-top: 45px;
 }
 
 .form-header { 
@@ -185,6 +254,47 @@ footer {
     line-height: 5.7rem;
     color: var(--headers-color);
     font-weight: 700;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.form-field {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--inner-input-text-color);
+    
+    padding: 11px auto 15px 20px;
+}
+
+.forms-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.label-style {
+    visibility: hidden;
+}
+
+.paragraph-prev-footer {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#last-section-header {
+    text-align: left;
+    margin-bottom: 0px;
 }
 
 .footer-header {
@@ -193,14 +303,18 @@ footer {
     line-height: 3.2rem;
     letter-spacing: 0.1px;
     text-align: left;
+    margin: 40px auto 50px;
 }
 
 .footer-list-header {
     color: #fff;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-ul {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .footer-ul-text { 
@@ -208,19 +322,62 @@ footer {
     font-weight: 600;
     line-height: 2.4rem;
     letter-spacing: 0.02rem;
+    margin-bottom: 10px;
 }
 
 .footer-ul-text-a {
     color: #fff; 
 }
 
+.video-background {
+    background: rgb(255,255,255);
+    background: linear-gradient( rgba(255,255,255,1) 50%, rgba(23,33,60,1) 50%);
+}
+
+.subcribe-container {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-field {
+    display: inline-flex;
+    height: 60px;
+    margin-right: -5px;
+    border: solid #fff 2px;
+}
+
+.subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height:60px;
+    border: solid #fff 2px;
+    
+}
+
+
 .footer-under-subscribe-text {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2.8rem;
     color: #fff;
+    margin: 0px;
 }
 
+#links-and-contacts {
+    margin-top: 70px;
+}
+
+#form-section {
+    background-image: url(../img/last_section_bckgrnd_img.png);
+    background-position: center center;
+    padding-top: 0%;
+    padding-bottom: 85px;
+}
 
 #button-orange-get-now{
     display: flex;
@@ -236,7 +393,7 @@ footer {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    
+
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -260,6 +417,29 @@ footer {
     text-decoration: none;
 
     margin: 25px auto 50px;
-    
+}
 
+#message-field {
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+    max-height: 140px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    padding: 16px auto auto 26px;
+    margin-bottom: 40px;
+}
+
+#play-button {
+    width: 100%;
+    height: 440px;
+    border: 1px solid #DEDEDE;
+    background-position: center center;
+    background-size:auto;
+    background-image: url(../img/video_img.png);
 }

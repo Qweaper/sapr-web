@@ -20,10 +20,10 @@
 
       <nav>
         <ul class="header-nav-ul">
-          <li><a href="#" class="header-nav-ul-text">Home</a></li>
-          <li><a href="#" class="header-nav-ul-text">Product</a></li>
-          <li><a href="#" class="header-nav-ul-text">Pricing</a></li>
-          <li><a href="#" class="header-nav-ul-text">Contact</a></li>
+          <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-text">Home</a></li>
+          <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-text">Product</a></li>
+          <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-text">Pricing</a></li>
+          <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-text">Contact</a></li>
         </ul>
       </nav>
     
@@ -31,7 +31,7 @@
 
   <main>
     <section>
-      <h1>Landing page of Consult</h1>
+      <h1 class="sr-only">Landing page of Consult</h1>
       <h2>First-Class Business Consultant</h2>
       <p class="main-brend-slogan">We know how large objects will act, but things on a small scale just do not act that way.</p>
       <button id="button-orange-get-now" >Get Quote Now</button>
@@ -43,55 +43,67 @@
         conflict between the two major realms of 
         Classical physics: Newtonian mechanics</p>
       <ul class="carts-ul">
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/briefcase.svg" alt="Briefcase" width="48" height="48">
-            <h3>Business & Finance</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/briefcase.svg" alt="Briefcase" width="48" height="48">
+              <h3 class="carts-ul-li-header">Business & Finance</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
           </a>
         </li>
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/market.svg" alt="Products" width="48" height="48">
-            <h3>Consumer Products</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/market.svg" alt="Products" width="48" height="48">
+              <h3 class="carts-ul-li-header">Consumer Products</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
           </a>
         </li>
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/notebook.svg" alt="Environmental" width="48" height="48">
-            <h3>Environmental</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/notebook.svg" alt="Environmental" width="48" height="48">
+              <h3 class="carts-ul-li-header">Environmental</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
           </a>
         </li>
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/people.svg" alt="Crew" width="48" height="48">
-            <h3>Business & Finance</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/people.svg" alt="Crew" width="48" height="48">
+              <h3 class="carts-ul-li-header">Business & Finance</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
           </a>
         </li>
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/network.svg" alt="Infrastructure" width="48" height="48">
-            <h3>Consumer Products</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/network.svg" alt="Infrastructure" width="48" height="48">
+              <h3 class="carts-ul-li-header">Consumer Products</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
           </a>
         </li>
-        <li>
+        <li class="carts-ul-li">
           <a href="#">
-            <img src="./img/achievement.svg" alt="Achievements" width="48" height="48">
-            <h3>Environmental</h3>
+            <span class="wrapper carts-ul-li-h-container ">
+              <img src="./img/achievement.svg" alt="Achievements" width="48" height="48">
+              <h3 class="carts-ul-li-header">Environmental</h3>
+            </span>
             <p>the quick fox jumps over the lazy 
               dog the quick fox jumps over the 
               lazy dog</p>
@@ -99,21 +111,14 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="video-background">
       <h2>Who We Are</h2>
       <p class="paragraph-default-text-centered">Problems trying to resolve 
         the conflict between the 
         two major realms of Classical 
         physics: Newtonian mechanics</p>
-        <img src="./img/rick_roll.gif" alt="You're have been rickrolled!" width="320" height="200">
-        <button><img src="./img/video_play_button.svg" alt="play button" width="50" height="50"></button>
-      <!-- <iframe width="300" 
-      height="200" 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-      title="YouTube video player" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-      </iframe> -->
+        <!-- <img src="./img/video_img.png" alt="You're have been rickrolled!" width="100%" height="auto"> -->
+        <button id="play-button"><img src="./img/video_play_button.svg" alt="play button" width="50" height="50"></button>
     </section>
     <section>
       <h2>What Clients Say</h2>
@@ -121,8 +126,8 @@
         the conflict between the 
         two major realms of Classical 
         physics: Newtonian mechanics</p>
-      <ul>
-        <li>
+      <ul class="blockquote-ul">
+        <li class="blockquote-ul-li">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
@@ -132,11 +137,11 @@
           <blockquote>Slate helps you see how many 
             more days you need to work to 
             reach your financial goal.</blockquote>
-          <img src="./img/photo_1.png" alt="photo" width="50" height="50">
+          <img class="blockquote-photo" src="./img/photo_1.png" alt="photo" width="50" height="50">
           <p class="blockquote-name-of-quoted ">Regina Miles</p>
           <p class="blockquote-proffession-of-quoted">Designer</p>
         </li>
-        <li>
+        <li class="blockquote-ul-li">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
@@ -146,11 +151,11 @@
           <blockquote>Slate helps you see how many 
             more days you need to work to 
             reach your financial goal.</blockquote>
-          <img src="./img/photo_2.png" alt="photo" width="50" height="50">
+          <img class="blockquote-photo" src="./img/photo_2.png" alt="photo" width="50" height="50">
           <p class="blockquote-name-of-quoted ">Regina Miles</p>
           <p class="blockquote-proffession-of-quoted">Designer</p>
         </li>
-        <li>
+        <li class="blockquote-ul-li">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
           <img src="./img/star.svg" alt="marked star" width="18" height="18">
@@ -160,30 +165,39 @@
           <blockquote>Slate helps you see how many 
             more days you need to work to 
             reach your financial goal.</blockquote>
-          <img src="./img/photo_3.png" alt="photo" width="50" height="50">
+          <img class="blockquote-photo" src="./img/photo_3.png" alt="photo" width="50" height="50">
           <p class="blockquote-name-of-quoted ">Regina Miles</p>
           <p class="blockquote-proffession-of-quoted">Designer</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section id="form-section">
       <h2 class="contacts-header">Contact Us</h2>
       <form>
         <h3 class="form-header">Make an Appointment</h3>  
-        <label>Full Name <input type="text" placeholder="Full name"></label>
-        <label>Email<input type="text" placeholder="example@gmail.com"></label>
-        <label>Selector<input type="text" placeholder="Please Select"></label>
-        <label>Time selector<input type="text" placeholder="4:00 Available"></label>
-        <textarea cols="30" rows="10" placeholder="Message"></textarea>
-        <button>Book Appointment</button>
+        <label class="sr-only" for="Full name">Full Name</label>
+        <input class="form-field" type="text" placeholder="Full name" name="Full name">
+        <label class="sr-only" for="email">Email</label>
+        <input class="form-field" type="text" placeholder="example@gmail.com" name="email">
+        <label class="sr-only" for="selector">Selector</label>
+        <select name="selector" class="form-field">
+          <option>Please select</option>
+        </select>
+        <label class="sr-only" for="time">Time selector</label>
+        <select name="time" class="form-field">
+          <option>4:00 Available</option>
+        </select>
+        <label class="sr-only" for="message">Message field</label>
+        <textarea id="message-field" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+        <button class="forms-button">Book Appointment</button>
       </form>
     </section>
     <section>
-      <h2>Consulting Agency 
+      <h2 id="last-section-header">Consulting Agency 
         For Your Business</h2>
-      <p>the quick fox jumps over 
+      <p class="paragraph-prev-footer">the quick fox jumps over 
         the lazy dog</p>
-      <button>Contact Us</button>
+      <button class="forms-button">Contact Us</button>
     </section>
   </main>
 
@@ -193,40 +207,45 @@
     <a href="#"><img src="./img/instagram_icn.svg" alt="instagram" width="24" height="24"></a>
     <a href="#"><img src="./img/twitter_icn.svg" alt="twintter" width="24" height="24"></a>
     <a href="#"><img src="./img/youtube_icn.svg" alt="youtube" width="24" height="24"></a>
-    <h3 class="footer-list-header">Company info</h3>
-    <ul class="footer-ul">
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">About Us</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Carrier</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">We are hiring</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Blog</a></li>
-    </ul>
-    <h3 class="footer-list-header">Legal</h3>
-    <ul class="footer-ul">
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">About Us</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Carrier</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">We are hiring</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Blog</a></li>
-    </ul>
-    <h3 class="footer-list-header">Features</h3>
-    <ul class="footer-ul">
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Business Marketing</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">User Analitic</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Live Chat</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Unlimited Support</a></li>
-    </ul>
-    <h3 class="footer-list-header">Resourses</h3>
-    <ul class="footer-ul">
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">IOS & Android</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Watch a Demo</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Customers</a></li>
-      <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">API</a></li>
-    </ul>
-    <h3 class="footer-list-header">Get in Touch</h3>
-    <form>
-      <label>Subscribe field<input type="text"></label>
-      <button>Subscribe</button>
-      <p class="footer-under-subscribe-text">Lorem ipsum dolor sit amet.</p>
-    </form>
+    <div id="links-and-contacts">
+      <h3 class="footer-list-header">Company info</h3>
+      <ul class="footer-ul">
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">About Us</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Carrier</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">We are hiring</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Blog</a></li>
+      </ul>
+      <h3 class="footer-list-header">Legal</h3>
+      <ul class="footer-ul">
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">About Us</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Carrier</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">We are hiring</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Blog</a></li>
+      </ul>
+      <h3 class="footer-list-header">Features</h3>
+      <ul class="footer-ul">
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Business Marketing</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">User Analitic</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Live Chat</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Unlimited Support</a></li>
+      </ul>
+      <h3 class="footer-list-header">Resourses</h3>
+      <ul class="footer-ul">
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">IOS & Android</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Watch a Demo</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">Customers</a></li>
+        <li class="footer-ul-text"><a href="#" class="footer-ul-text-a">API</a></li>
+      </ul>
+      <h3 class="footer-list-header">Get in Touch</h3>
+      <form>
+        <label class="sr-only" for="subscribe field">Subscribe field</label>
+        <span class="subcribe-container">
+          <input class="subscribe-field" type="text" name="subscribe field">
+          <button class="subscribe-button">Subscribe</button>
+        </span>
+        <p class="footer-under-subscribe-text">Lorem ipsum dolor sit amet.</p>
+      </form>
+    </div>
   </footer>
 
 </body>
