@@ -23,7 +23,6 @@ h2 {
     font-size: 4rem;
     line-height: 5.7rem;
     color: var(--headers-color);
-    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 700;
     text-align: center;
 }
@@ -115,6 +114,7 @@ footer {
 
 .header{
     padding-top: 36px;
+    padding-bottom: 100px
 }
 
 
@@ -151,12 +151,8 @@ footer {
     list-style-type: none;
     text-align: center;
     margin-top: 85px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     padding: 0px;
-    /* display: flex;
-    flex-wrap: wrap;
-    padding: 0px auto 0px auto; 
-    align-content: center; */
 }
 
 .header-nav-ul-li {
@@ -166,6 +162,10 @@ footer {
 .header-nav-ul-text {
     text-decoration: none;
     color: var(--paragraph-color);
+}
+
+.section-cards-list {
+    padding-bottom: 160px;
 }
 
 .main-brend-slogan {
@@ -180,27 +180,29 @@ footer {
     text-align: center;   
 }
 
-.carts-ul {
+.cards-ul {
     list-style-type: none;
     margin-top: 45px;
+    margin-bottom: 0px;
     padding-left: 0px;
+    padding-bottom: 30px;
+    
 }
 
-.carts-ul-li{
+.cards-ul-li{
     padding: 35px 40px;
     border: 1px solid #E8E8E8;
     margin-top: 30px;
 }
 
-.carts-ul-li-h-container{
+.cards-ul-li-h-container{
     display: flex;
     margin-bottom: 15px;
     align-items: center;
     padding: 0px;
-
 }
 
-.carts-ul-li-header{
+.cards-ul-li-header{
     display: inline;
 
     margin-left: 15px;
@@ -209,14 +211,14 @@ footer {
 .blockquote-ul{
     padding: 0px;
     list-style-type: none;
+    padding-bottom: 45px;
     margin-top: 60px;
+    margin-bottom: 0px;
 }
 
 .blockquote-ul-li {
     padding: 30px 36px;
-    border: 1px solid #DEDEDE;
     border-radius: 5px;
-    margin-bottom: 30px;
 }
 
 .blockquote-photo {
@@ -239,6 +241,10 @@ footer {
     margin: 0px 0px 0px 65px;
 }
 
+.blockquote-section {
+    padding-bottom: 50px
+}
+
 .contacts-header {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -246,7 +252,6 @@ footer {
     font-weight: 700;
     text-align: left;
     margin: 0px;
-    margin-top: 45px;
 }
 
 .form-header { 
@@ -267,9 +272,6 @@ footer {
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    color: var(--inner-input-text-color);
-    
-    padding: 11px auto 15px 20px;
 }
 
 .forms-button {
@@ -279,8 +281,11 @@ footer {
     border: none;
     border-radius: 5px;
     width: 100%;
-    height: 60px;
-    margin-bottom: 40px;
+    height: 60px;  
+}
+
+.form-field::placeholder {
+    color: var(--inner-input-text-color);
 }
 
 .label-style {
@@ -290,6 +295,15 @@ footer {
 .paragraph-prev-footer {
     margin-top: 0px;
     margin-bottom: 50px;
+}
+
+.last-section{ 
+    padding-bottom: 40px;
+}
+
+.sn-link-images
+{
+    margin-right: 20px;
 }
 
 #last-section-header {
@@ -331,7 +345,8 @@ footer {
 
 .video-background {
     background: rgb(255,255,255);
-    background: linear-gradient( rgba(255,255,255,1) 50%, rgba(23,33,60,1) 50%);
+    background: linear-gradient(rgba(255,255,255,1) 50%, rgba(23,33,60,1) 50%);
+    padding-bottom: 130px;
 }
 
 .subcribe-container {
@@ -345,6 +360,8 @@ footer {
     height: 60px;
     margin-right: -5px;
     border: solid #fff 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .subscribe-button {
@@ -375,7 +392,8 @@ footer {
 #form-section {
     background-image: url(../img/last_section_bckgrnd_img.png);
     background-position: center center;
-    padding-top: 0%;
+    background-repeat: no-repeat;
+    padding-top: 85px;
     padding-bottom: 85px;
 }
 
@@ -415,8 +433,9 @@ footer {
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
+    color: #0D5C63;
 
-    margin: 25px auto 50px;
+    margin: 25px auto 0px;
 }
 
 #message-field {
