@@ -622,4 +622,7 @@ footer {
     #links-wrapper{
         display: initial;
     }
+    .subcribe-container{
+        justify-content: flex-start;
+    }
 }
