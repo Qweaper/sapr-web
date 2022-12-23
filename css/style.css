@@ -143,10 +143,7 @@ footer {
 
 .header-nav-ul {
     
-    font-size: 3rem;
-    line-height: 4.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    
     
     list-style-type: none;
     text-align: center;
@@ -160,8 +157,35 @@ footer {
 }
 
 .header-nav-ul-text {
+    
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     color: var(--paragraph-color);
+}
+
+.header-nav-ul-text-decktop{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--paragraph-color);
+    padding-right: 20px;
+}
+
+.first-section-mobile
+{
+
+}
+
+.greating-desktop-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .section-cards-list {
@@ -181,11 +205,14 @@ footer {
 }
 
 .cards-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     list-style-type: none;
-    margin-top: 45px;
-    margin-bottom: 0px;
+    margin: 0px;
     padding-left: 0px;
     padding-bottom: 30px;
+    max-width: 1200px;
     
 }
 
@@ -193,6 +220,7 @@ footer {
     padding: 35px 40px;
     border: 1px solid #E8E8E8;
     margin-top: 30px;
+    max-width: 330px;
 }
 
 .cards-ul-li-h-container{
@@ -208,7 +236,17 @@ footer {
     margin-left: 15px;
 }
 
+.video-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .blockquote-ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0px;
     list-style-type: none;
     padding-bottom: 45px;
@@ -219,6 +257,8 @@ footer {
 .blockquote-ul-li {
     padding: 30px 36px;
     border-radius: 5px;
+    max-width: 330px;
+
 }
 
 .blockquote-photo {
@@ -263,12 +303,29 @@ footer {
     margin-bottom: 40px;
 }
 
+.form-wrapper
+{
+    width: 1000px; /*как это сделать, я не знаю*/
+    max-width: 1400px;
+}
+
+.form-wrapper-inner
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: space-between;
+    
+}
+
+
+
 .form-field {
     display: flex;
     height: 50px;
     width: 100%;
     margin-bottom: 20px;
-
+    max-width: 290px;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
@@ -282,6 +339,7 @@ footer {
     border-radius: 5px;
     width: 100%;
     height: 60px;  
+    max-width: 230px;
 }
 
 .form-field::placeholder {
@@ -385,16 +443,21 @@ footer {
     margin: 0px;
 }
 
+
 #links-and-contacts {
     margin-top: 70px;
 }
 
 #form-section {
+    display: flex;
+    justify-content: space-around;
     background-image: url(../img/last_section_bckgrnd_img.png);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover;
+
     padding-top: 85px;
     padding-bottom: 85px;
+    
 }
 
 #button-orange-get-now{
@@ -438,6 +501,32 @@ footer {
     margin: 25px auto 0px;
 }
 
+#button-orange-get-now-desktop{
+    border: none;
+    border-radius: 37px;
+    padding: 10px 36px;
+    height: 48px;
+    font-size: 1.4rem;
+    font-weight: 700; 
+    padding: 10px 36px;
+}
+
+#link-learn-more-desktop{
+    height: 48px;
+    padding: 10px 36px;
+    border: 1px solid #0D5C63;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0D5C63;
+}
+
 #message-field {
     width: 100%;
     display: flex;
@@ -460,5 +549,73 @@ footer {
     border: 1px solid #DEDEDE;
     background-position: center center;
     background-size:auto;
+    background-repeat: no-repeat;
+    max-width: 880px;
     background-image: url(../img/video_img.png);
+}
+
+#nav-horizontal-desktop{
+
+}
+
+#nav-vertical-mobile{
+
+}
+
+#greating-desktop-only
+{
+    padding: 80px 95px;
+
+}
+
+#desktop-horizontal-line{
+    border: none;
+    background-color:  #364067;
+    height: 2px;
+    margin-top: 60px;
+}
+
+#links-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+    .last-section{
+        display: none;
+    }
+    .first-section-mobile{
+        display: none;
+    }
+    .header{
+        background-image: url(../img/header_background_img.png);
+        background-size: cover;
+    }
+    #nav-vertical-mobile{
+        display: none;
+    }
+    .footer-header{
+        margin:0px;
+    }
+    #links-and-contacts{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    #nav-horizontal-desktop{
+        display: none;
+    }
+    #greating-desktop-only{
+        display: none;
+    }
+    #desktop-horizontal-line{
+        display: none;
+    }
+    #links-wrapper{
+        display: initial;
+    }
 }
