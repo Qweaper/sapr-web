@@ -76,7 +76,7 @@ input {
 
 footer {
     background-color: var(--headers-color);
-    padding: 36px 35px 0px;
+    padding: 36px 35px 70px;
 }
 
 
@@ -601,6 +601,9 @@ footer {
     #links-and-contacts{
         display: flex;
         justify-content: space-evenly;
+    }
+    .footer-ul-text-a{
+        color: var(--inner-input-text-color)
     }
 }
 
